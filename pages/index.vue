@@ -16,11 +16,12 @@
 <style lang="scss" scoped>
 .hero {
   height: 600px;
-  padding: 0 16px;
+  padding: 16px;
   background: center/cover url(/images/hero-1.jpg);
   display: flex;
-  flex-flow: column;
   justify-content: center;
+  align-items: center;
+  flex-flow: column;
   color: #333;
   // margin-bottom: 24px;
   // line-height: 1.8;
