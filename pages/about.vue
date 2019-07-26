@@ -1,6 +1,13 @@
 <template>
   <div class="section">
     <div class="container">
+      <div class="heading">
+        <h2 class="heading__title">会社の理念</h2>
+        <p class="heading__sub-title">
+          御社利益のためのIT支援を致します
+          <br />臨機に時々の最善を尽くします
+        </p>
+      </div>
       <div class="services">
         <h2 class="services__title">会社概要</h2>
         <div class="services__table">
@@ -32,6 +39,9 @@
 <script></script>
 
 <style lang="scss" scoped>
+.section {
+  background: #fbf9f7;
+}
 .services {
   display: flex;
   justify-content: center;

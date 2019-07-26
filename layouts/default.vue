@@ -6,19 +6,25 @@
       </p>
       <ul class="gnav">
         <li class="gnav__item">
+          <nuxt-link to="/" class="gnav__link">ホーム</nuxt-link>
+        </li>
+        <li class="gnav__item">
           <nuxt-link to="/services" class="gnav__link">事業案内</nuxt-link>
         </li>
         <li class="gnav__item">
           <nuxt-link to="/about" class="gnav__link">会社案内</nuxt-link>
         </li>
         <li class="gnav__item">
-          <nuxt-link to="/contact" class="gnav__link">お問合わせ</nuxt-link>
+          <nuxt-link to="/contact" class="gnav__link">お問い合わせ</nuxt-link>
         </li>
       </ul>
     </header>
     <nuxt />
     <footer class="footer">
       <ul class="fnav">
+        <li class="fnav__item">
+          <nuxt-link to="/" class="fnav__link">ホーム</nuxt-link>
+        </li>
         <li class="fnav__item">
           <nuxt-link to="/services" class="fnav__link">事業案内</nuxt-link>
         </li>
@@ -43,6 +49,10 @@
   justify-content: space-between;
   border-bottom: 1px solid rgba(black, 0.12);
   background: rgba(0, 0, 0, 0.7);
+  // position: fixed; /* 画面上に固定 */
+  // top: 0; /* 固定する垂直方向の位置 */
+  // left: 0; /* 固定する水平方向の位置 */
+  // width: 100%;
   &__logo {
     font-size: 40px;
   }
@@ -51,10 +61,25 @@
   display: flex;
   &__link {
     font-size: 24px;
-    padding-right: 72px;
-    display: inline;
+    padding: 0 24px;
+    display: block;
     position: relative;
     display: block;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #fff;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    &:hover:after {
+      opacity: 1;
+    }
     &.nuxt-link-active {
       font-weight: bold;
     }
