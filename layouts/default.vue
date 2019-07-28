@@ -6,7 +6,7 @@
       </p>
       <ul class="gnav">
         <li class="gnav__item">
-          <nuxt-link to="/" class="gnav__link">ホーム</nuxt-link>
+          <nuxt-link to="/" exact class="gnav__link">ホーム</nuxt-link>
         </li>
         <li class="gnav__item">
           <nuxt-link to="/services" class="gnav__link">事業案内</nuxt-link>
@@ -42,13 +42,14 @@
 
 <style lang="scss" scoped>
 .header {
-  color: #fff;
+  color: #444;
   padding: 16px;
   line-height: 56px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgba(black, 0.12);
-  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  // background: rgba(255, 255, 255, 0.7);
   // position: fixed; /* 画面上に固定 */
   // top: 0; /* 固定する垂直方向の位置 */
   // left: 0; /* 固定する水平方向の位置 */
@@ -73,7 +74,7 @@
       left: 0;
       width: 100%;
       height: 3px;
-      background: #fff;
+      background: #444;
       opacity: 0;
       transition: opacity 0.3s;
     }

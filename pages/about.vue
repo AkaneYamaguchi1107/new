@@ -47,20 +47,23 @@
   justify-content: center;
   padding: 30px;
   &__title {
-    color: #333;
+    color: #444;
     font-size: 24px;
     margin: 0 32px 24px 0;
   }
   &__table {
     line-height: 48px;
     th {
+      color: #444;
       padding: 24px;
-      border: 1px solid #333;
+      border: 1px solid #444;
       background: #ccc;
     }
     td {
+      color: #444;
       padding: 8px;
-      border: 1px solid #333;
+      border: 1px solid #444;
+      background: #fff;
     }
   }
 }

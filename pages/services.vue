@@ -10,7 +10,7 @@
         </p>
       </div>
       <div class="row">
-        <div class="col col--6">
+        <div class="col col--12">
           <div class="skill">
             <div class="skill__item">
               <h3 class="skill__title">
@@ -25,7 +25,7 @@
             </div>
           </div>
         </div>
-        <div class="col col--6">
+        <div class="col col--12">
           <div class="skill">
             <div class="skill__item">
               <h3 class="skill__title">
@@ -39,7 +39,7 @@
             </div>
           </div>
         </div>
-        <div class="col col--6">
+        <div class="col col--12">
           <div class="skill">
             <div class="skill__item">
               <h3 class="skill__title">
@@ -52,7 +52,7 @@
             </div>
           </div>
         </div>
-        <div class="col col--6">
+        <div class="col col--12">
           <div class="skill">
             <div class="skill__item">
               <h3 class="skill__title">
@@ -78,6 +78,7 @@
 }
 .heading {
   margin-bottom: 24px;
+  color: #444;
   &__title {
     font-size: 32px;
     border-bottom: 2px solid #333;
@@ -88,15 +89,15 @@
 }
 .skill {
   padding: 40px;
-  background: #333;
-  color: white;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  // background: #333;
+  color: #444;
+  // border-radius: 12px;
+  // box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
   &__title {
     font-size: 32px;
   }
   &__text {
-    padding: 24px;
+    padding: 32px;
     font-size: 24px;
   }
 }

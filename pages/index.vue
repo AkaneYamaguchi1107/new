@@ -3,10 +3,9 @@
     <div class="hero">
       <h1 class="hero__title">Let's Enjoy job!</h1>
       <p class="hero__sub-title">Now is the time.</p>
-      <div class="hero__button">
-        <button class="btn">
-          <nuxt-link to>お問合わせ</nuxt-link>
-        </button>
+      <div class="sns-icon">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
       </div>
     </div>
   </div>
@@ -22,17 +21,25 @@
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  color: #333;
   // margin-bottom: 24px;
   // line-height: 1.8;
   &__title {
+    color: #444;
     font-size: 32px;
     margin-bottom: 24px;
   }
   &__sub-title {
+    color: #444;
     font-size: 24px;
     margin-bottom: 16px;
     font-weight: bold;
   }
+}
+.sns-icon {
+  padding: 8px;
+}
+.fab {
+  padding: 24px;
+  font-size: 40px;
 }
 </style>
