@@ -43,17 +43,17 @@
 <style lang="scss" scoped>
 .header {
   color: #444;
-  padding: 16px;
-  line-height: 56px;
+  padding: 0 16px;
+  line-height: 80px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgba(black, 0.12);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  // background: rgba(255, 255, 255, 0.7);
-  // position: fixed; /* 画面上に固定 */
-  // top: 0; /* 固定する垂直方向の位置 */
-  // left: 0; /* 固定する水平方向の位置 */
-  // width: 100%;
+  // box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.7);
+  position: fixed; /* 画面上に固定 */
+  top: 0; /* 固定する垂直方向の位置 */
+  left: 0; /* 固定する水平方向の位置 */
+  width: 100%;
   &__logo {
     font-size: 40px;
   }
