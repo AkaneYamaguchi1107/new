@@ -19,6 +19,10 @@ export default {
       {
         rel: 'stylesheet',
         href: 'https://use.fontawesome.com/releases/v5.6.3/css/all.css'
+      },
+      {
+        rel: "stylesheet",
+        href: "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
       }
     ]
   },
@@ -33,7 +37,8 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+
+  plugins: ['~plugins/scroll.js'],
   /*
    ** Nuxt.js modules
    */

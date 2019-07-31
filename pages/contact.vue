@@ -12,8 +12,8 @@
         <div class="form">
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSenlgfdR-srhwjoVluFGtObjstE3IhLxbW24LUn1_v7mmKtng/viewform?embedded=true"
-            width="640"
-            height="1063"
+            width="100%"
+            height="1144"
             frameborder="0"
             marginheight="0"
             marginwidth="0"
@@ -65,12 +65,14 @@
   &__title {
     color: #444;
     font-size: 32px;
-    padding: 0 0 16px 0;
+    // padding: 0 0 16px 0;
+    border-bottom: 2px solid #333;
     // line-height: 56px;
   }
   &__text {
     color: #444;
     font-size: 24px;
+    padding: 16px;
     margin-bottom: 24px;
   }
 }
@@ -79,5 +81,8 @@
 }
 .line {
   padding: 8px;
+}
+.form {
+  text-align: center;
 }
 </style>

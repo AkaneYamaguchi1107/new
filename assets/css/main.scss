@@ -3,6 +3,9 @@
 @import "components/button";
 @import "layouts/grid";
 
+body {
+  font-family: "Noto Sans JP";
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -11,6 +14,8 @@ a {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 16px;
+  // box-sizing: border-box;
+  width: 100%;
 }
 ul, ol {
   list-style: none;

@@ -21,8 +21,8 @@
           <tr>
             <th>沿革</th>
             <td>
-              <li>2013年2月5日 江東区富岡に設立</li>
               <li>2016年04月27 世田谷区瀬田に移転</li>
+              <li>2013年2月5日 江東区富岡に設立</li>
             </td>
           </tr>
         </div>
@@ -45,6 +45,7 @@
 
 <style lang="scss" scoped>
 .section {
+  // width: 100%;
   padding: 150px;
   background: #fbf9f7;
 }
@@ -58,7 +59,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  margin: 56px;
   &__table {
     line-height: 48px;
     font-size: 24px;
@@ -80,5 +81,12 @@
   text-align: center;
   font-size: 24px;
   padding-bottom: 24px;
+}
+.iframe {
+  display: block;
+  width: 100%;
+  @include sp {
+    height: 160px;
+  }
 }
 </style>
