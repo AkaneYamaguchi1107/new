@@ -23,8 +23,10 @@
                 <p class="skill__text">
                   案件のコスト計算、スケジュール作成を始め始めアクセス解析、パフォーマンス解析、etc
                   サービスを提供するうえでの課題抽出、および、課題の根本解決への整理・仮説・実行計画よりクリティカルパスを導出。
-                  UXは「<span style="font-weight:bold;">お客様中心</span>」
-                  に、UIは「シンプルに・わかりやすく」開始初期からの徹底した情報共有により推進します。
+                  UXは「<span class="bold">お客様中心</span>」 に、UIは「<span
+                    class="bold"
+                    >シンプルに・わかりやすく</span
+                  >」 開始初期からの徹底した情報共有により推進します。
                 </p>
               </div>
             </div>
@@ -124,5 +126,8 @@
 }
 .animated {
   animation-duration: 1.5s;
+}
+.bold {
+  font-weight: bold;
 }
 </style>

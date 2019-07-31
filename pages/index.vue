@@ -2,10 +2,19 @@
   <div>
     <div class="hero">
       <div class="animated fadeIn">
-        <h1 class="hero__title">Let's Enjoy job!</h1>
-        <p class="hero__sub-title">Now is the time.</p>
+        <h1 class="hero__title">
+          Let's Enjoy job!
+        </h1>
+        <p class="hero__sub-title">
+          Now is the time.
+        </p>
         <div class="sns-icon">
-          <i class="fab fa-facebook-square"></i>
+          <a
+            href="https://www.facebook.com/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%A4%E3%83%9E%E3%82%B7%E3%82%A2-405790622855161/"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-square"></i>
+          </a>
         </div>
       </div>
     </div>

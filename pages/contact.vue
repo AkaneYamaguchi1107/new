@@ -64,7 +64,7 @@
   // justify-content: center;
   // align-items: center;
   // text-align: center;
-  margin: 0 auto;
+  // margin: 0 auto;
   // padding: 0 100px;
   &__title {
     color: #444;
