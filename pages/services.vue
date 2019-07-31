@@ -76,7 +76,9 @@
 .section {
   padding: 150px;
   background: #fbf9f7;
-  width: 100%;
+  @include sp {
+    padding: 100px 0;
+  }
 }
 .heading {
   margin-bottom: 24px;
@@ -99,6 +101,9 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
   // max-width: 100%;
   box-sizing: border-box;
+  @include sp {
+    max-width: 100%;
+  }
   &__item {
     // box-sizing: border-box;
   }

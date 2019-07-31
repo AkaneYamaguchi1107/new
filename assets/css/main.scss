@@ -14,8 +14,8 @@ a {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 16px;
-  // box-sizing: border-box;
-  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 ul, ol {
   list-style: none;

@@ -64,6 +64,9 @@
 }
 .gnav {
   display: flex;
+  @include sp {
+    display: none;
+  }
   &__link {
     font-size: 24px;
     padding: 0 24px;
@@ -98,7 +101,7 @@
   background: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  // width: 100%;
 }
 .fnav {
   display: flex;

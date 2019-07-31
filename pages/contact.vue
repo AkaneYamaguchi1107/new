@@ -54,6 +54,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  // width: 100%;
+  @include sp {
+    padding: 100px 0 0 0;
+  }
 }
 .contact {
   // display: flex;

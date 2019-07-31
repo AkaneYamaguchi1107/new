@@ -15,16 +15,16 @@
 <script></script>
 <style lang="scss" scoped>
 .hero {
-  height: 900px;
+  height: 975px;
   padding: 16px;
   background: center/cover url(/images/hero-1.jpg);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  width: 100%;
+  // width: 100%;
   @include sp {
-    height: 490px;
+    height: 630px;
   }
   // margin-bottom: 24px;
   // line-height: 1.8;

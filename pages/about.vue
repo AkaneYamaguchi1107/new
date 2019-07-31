@@ -30,7 +30,7 @@
       <div class="access">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.297004619258!2d139.62748611519908!3d35.620403940913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f412cc4882cb%3A0xc85163cc3a779fdb!2z44CSMTU4LTAwOTUg5p2x5Lqs6YO95LiW55Sw6LC35Yy654Cs55Sw77yU5LiB55uu77yS77yT4oiS77yV!5e0!3m2!1sja!2sjp!4v1564391107217!5m2!1sja!2sjp"
-          width="800"
+          width="100%"
           height="450"
           frameborder="0"
           style="border:0"
@@ -48,6 +48,9 @@
   // width: 100%;
   padding: 150px;
   background: #fbf9f7;
+  @include sp {
+    padding: 100px 0;
+  }
 }
 .title {
   color: #444;
@@ -81,10 +84,12 @@
   text-align: center;
   font-size: 24px;
   padding-bottom: 24px;
+  @include sp {
+    // width: 100%;
+  }
 }
 .iframe {
   display: block;
-  width: 100%;
   @include sp {
     height: 160px;
   }
