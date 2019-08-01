@@ -67,14 +67,14 @@
   // margin: 0 auto;
   // padding: 0 100px;
   &__title {
-    color: #444;
+    // color: #444;
     font-size: 32px;
     // padding: 0 0 16px 0;
     border-bottom: 2px solid #333;
     // line-height: 56px;
   }
   &__text {
-    color: #444;
+    // color: #444;
     font-size: 24px;
     padding: 16px;
     margin-bottom: 24px;

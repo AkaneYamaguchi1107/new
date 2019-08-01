@@ -23,6 +23,10 @@ export default {
       {
         rel: "stylesheet",
         href: "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+      },
+      {
+        rel:"stylesheet",
+        href:"https://fonts.googleapis.com/css?family=Noto+Sans+JP"
       }
     ]
   },

@@ -5,7 +5,7 @@
         会社概要
       </h2>
       <div class="services">
-        <div class="services__table">
+        <table class="services__table">
           <tr>
             <th>社名</th>
             <td>株式会社ヤマシア</td>
@@ -25,7 +25,7 @@
               <li>2013/02/05 江東区富岡に設立</li>
             </td>
           </tr>
-        </div>
+        </table>
       </div>
       <h2 class="access">
         ACCESS
@@ -55,7 +55,7 @@
   }
 }
 .title {
-  color: #444;
+  // color: #444;
   font-size: 32px;
   margin-bottom: 24px;
   border-bottom: 2px solid #444;
@@ -68,17 +68,20 @@
   &__table {
     line-height: 48px;
     font-size: 24px;
+    @include sp {
+      width: 100%;
+    }
     th {
-      color: #444;
-      padding: 30px;
+      // color: #444;
+      padding: 32px;
       border: 1px solid #444;
-      background: #ccc;
+      background: #f2f2f2;
     }
     td {
-      color: #444;
-      padding: 50px;
+      // color: #444;
+      padding: 32px;
       border: 1px solid #444;
-      background: #fff;
+      background: #fafafa;
     }
   }
 }

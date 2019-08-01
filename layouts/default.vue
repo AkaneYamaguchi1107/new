@@ -43,7 +43,7 @@
 <style lang="scss" scoped>
 .header {
   padding: 0 16px;
-  color: #444;
+  // color: #444;
   line-height: 80px;
   display: flex;
   justify-content: space-between;
@@ -95,7 +95,7 @@
 }
 
 .footer {
-  color: #fff;
+  color: #fafafa;
   padding: 16px;
   font-size: 12px;
   background: rgba(0, 0, 0, 0.7);
