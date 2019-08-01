@@ -5,7 +5,7 @@
         <h2 class="heading__title">
           当社ITの強み
         </h2>
-        <p class="heading__sub-title">
+        <p class="heading__text">
           当社は既存の枠にとらわれない一環した案件推進を提供するのが強みの会社です。
         </p>
       </div>
@@ -74,18 +74,6 @@
   background: #fbf9f7;
   @include sp {
     padding: 100px 0;
-  }
-}
-.heading {
-  margin-bottom: 24px;
-  color: #444;
-  &__title {
-    font-size: 32px;
-    border-bottom: 2px solid #333;
-  }
-  &__sub-title {
-    padding: 16px;
-    font-size: 24px;
   }
 }
 .skill {

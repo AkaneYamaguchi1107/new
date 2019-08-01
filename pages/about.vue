@@ -1,9 +1,11 @@
 <template>
   <div class="section">
     <div class="container">
-      <h2 class="title">
-        会社概要
-      </h2>
+      <div class="heading">
+        <h2 class="heading__title">
+          会社概要
+        </h2>
+      </div>
       <div class="services">
         <table class="services__table">
           <tr>
