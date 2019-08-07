@@ -11,7 +11,10 @@
       </div>
       <div class="row">
         <div class="col col--12">
-          <div class="animated fadeInDown">
+          <div
+            class="animated"
+            data-scroll="once toggle(.fadeInDown, .invisible) addHeight"
+          >
             <div class="skill">
               <div class="skill__icon">
                 <i class="fas fa-handshake" />
@@ -31,7 +34,10 @@
           </div>
         </div>
         <div class="col col--12">
-          <div class="animated fadeInDown">
+          <div
+            class="animated"
+            data-scroll="once toggle(.fadeInDown, .invisible) addHeight"
+          >
             <div class="skill">
               <figure class="skill__icon">
                 <i class="fas fa-hand-holding-usd" />
@@ -48,7 +54,10 @@
           </div>
         </div>
         <div class="col col--12">
-          <div class="animated fadeInDown">
+          <div
+            class="animated"
+            data-scroll="once toggle(.fadeInDown, .invisible) addHeight"
+          >
             <div class="skill">
               <figure class="skill__icon">
                 <i class="fas fa-running" />
@@ -65,9 +74,9 @@
         </div>
       </div>
     </div>
+    <div class="js-drawer-back drawer-back" />
   </div>
 </template>
-<script></script>
 <style lang="scss" scoped>
 .section {
   padding: 150px;
@@ -77,25 +86,15 @@
   }
 }
 .skill {
-  // display: flex;
   padding: 16px 40px 40px 40px;
-  // padding: 24px;
-  // background: #333;
-  // color: #444;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
   background: #fafafa;
-  // max-width: 100%;
   box-sizing: border-box;
-  // position: relative;
   @include sp {
     max-width: 100%;
   }
   &__icon {
-    // text-align: center;
-    // float: left;
-    // display: flex;
-    // padding-left: 40px;
     font-size: 120px;
     padding-bottom: 24px;
     @include sp {
@@ -103,19 +102,20 @@
     }
   }
   &__title {
-    // position: absolute;
-    // left: 210px;
-    // display: inline;
     font-size: 32px;
     padding-bottom: 16px;
+    @include sp {
+      font-size: 24px;
+    }
   }
   &__text {
-    // position: absolute;
-    // bottom: 50px;
-    // left: 100px;
-    // display: block;
-    // padding: 24px;
+    letter-spacing: 0.8pt;
+    line-height: 40px;
     font-size: 24px;
+    @include sp {
+      line-height: 32px;
+      font-size: 16px;
+    }
   }
 }
 .animated {
@@ -126,5 +126,14 @@
 }
 .fas {
   font-size: 100px;
+}
+.invisible {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+.visible {
+  transition: opacity 0.5s ease;
+  opacity: 1;
 }
 </style>

@@ -45,6 +45,7 @@
             </p> -->
       </div>
     </div>
+    <div class="js-drawer-back drawer-back"></div>
   </div>
 </template>
 <style lang="scss" scoped>
@@ -66,13 +67,6 @@
   // text-align: center;
   // margin: 0 auto;
   // padding: 0 100px;
-  &__title {
-    // color: #444;
-    font-size: 32px;
-    // padding: 0 0 16px 0;
-    border-bottom: 2px solid #333;
-    // line-height: 56px;
-  }
   &__text {
     // color: #444;
     font-size: 24px;

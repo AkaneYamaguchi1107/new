@@ -28,6 +28,9 @@ export default {
         rel:"stylesheet",
         href:"https://fonts.googleapis.com/css?family=Noto+Sans+JP"
       }
+    ],
+    script: [
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' }
     ]
   },
   /*
@@ -42,7 +45,8 @@ export default {
    ** Plugins to load before mounting the App
    */
 
-  plugins: ['~plugins/scroll.js'],
+  plugins: [],
+
   /*
    ** Nuxt.js modules
    */

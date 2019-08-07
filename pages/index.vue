@@ -31,12 +31,9 @@
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  // width: 100%;
   @include sp {
     height: 630px;
   }
-  // margin-bottom: 24px;
-  // line-height: 1.8;
   &__title {
     color: #fafafa;
     font-size: 40px;

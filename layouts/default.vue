@@ -1,6 +1,9 @@
 <template>
   <div>
     <header class="header">
+      <a class="header__menu js-drawer-trg">
+        <i class="fas fa-bars"></i>
+      </a>
       <p class="header__logo">
         <nuxt-link to="/">yamashia</nuxt-link>
       </p>
@@ -43,29 +46,56 @@
 <style lang="scss" scoped>
 .header {
   padding: 0 16px;
-  // color: #444;
   line-height: 80px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgba(black, 0.12);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background: #fafafa;
-  position: fixed; /* 画面上に固定 */
-  top: 0; /* 固定する垂直方向の位置 */
-  left: 0; /* 固定する水平方向の位置 */
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 1;
+  @include sp {
+    width: 100%;
+  }
+  &__menu {
+    display: none;
+    @include sp {
+      display: block;
+      font-size: 32px;
+      margin-right: 24px;
+    }
+  }
   &__logo {
     font-size: 40px;
     @include sp {
       font-size: 32px;
+      width: 100%;
     }
   }
 }
 .gnav {
   display: flex;
   @include sp {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: block;
+    background: #fff;
+    transform: translateX(-100%);
+    transition: 0.3s;
+    z-index: 100;
+  }
+  &__item {
+    display: block;
+    font-size: 14px;
+    padding-right: 64px;
+    @include sp {
+      padding: 40px;
+    }
   }
   &__link {
     font-size: 24px;
@@ -93,7 +123,6 @@
     }
   }
 }
-
 .footer {
   color: #fafafa;
   padding: 16px;
@@ -101,7 +130,6 @@
   background: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: space-between;
-  // width: 100%;
 }
 .fnav {
   display: flex;

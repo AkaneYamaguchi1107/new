@@ -43,6 +43,7 @@
         />
       </div>
     </div>
+    <div class="js-drawer-back drawer-back"></div>
   </div>
 </template>
 
@@ -56,12 +57,6 @@
     padding: 100px 0;
   }
 }
-.title {
-  // color: #444;
-  font-size: 32px;
-  margin-bottom: 24px;
-  border-bottom: 2px solid #444;
-}
 .services {
   display: flex;
   justify-content: center;
@@ -71,19 +66,34 @@
     line-height: 48px;
     font-size: 24px;
     @include sp {
-      width: 100%;
+      display: block;
+      // width: 100%;
+      text-align: center;
+      font-size: 16px;
     }
     th {
       // color: #444;
       padding: 32px;
       border: 1px solid #444;
       background: #f2f2f2;
+      @include sp {
+        padding: 16px;
+        // text-align: center;
+        display: block;
+        // width: 100%;
+      }
     }
     td {
       // color: #444;
       padding: 32px;
       border: 1px solid #444;
       background: #fafafa;
+      @include sp {
+        // text-align: center;
+        display: block;
+        padding: 16px;
+        // width: 100%;
+      }
     }
   }
 }
