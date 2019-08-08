@@ -9078,6 +9078,11 @@ vue-router@^3.0.6:
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.7.tgz#b36ca107b4acb8ff5bc4ff824584059c23fcb87b"
   integrity sha512-utJ+QR3YlIC/6x6xq17UMXeAfxEvXA0VKD3PiSio7hBOZNusA1jXcbxZxVEfJunLp48oonjTepY8ORoIlRx/EQ==
 
+vue-scroll-class@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/vue-scroll-class/-/vue-scroll-class-1.2.3.tgz#cbacca002555ae6debf672e148d53cca00786cc6"
+  integrity sha1-y6zKACVVrm3r9nLhSNU8ygB4bMY=
+
 vue-server-renderer@^2.6.10:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/vue-server-renderer/-/vue-server-renderer-2.6.10.tgz#cb2558842ead360ae2ec1f3719b75564a805b375"

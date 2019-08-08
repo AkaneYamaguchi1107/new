@@ -29,25 +29,30 @@
           </tr>
         </table>
       </div>
-      <h2 class="access">
+      <div v-scroll-class:invisible class="access animated fadeInUp">
         ACCESS
-      </h2>
-      <div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.297004619258!2d139.62748611519908!3d35.620403940913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f412cc4882cb%3A0xc85163cc3a779fdb!2z44CSMTU4LTAwOTUg5p2x5Lqs6YO95LiW55Sw6LC35Yy654Cs55Sw77yU5LiB55uu77yS77yT4oiS77yV!5e0!3m2!1sja!2sjp!4v1564391107217!5m2!1sja!2sjp"
-          width="100%"
-          height="450"
-          frameborder="0"
-          style="border:0"
-          allowfullscreen
-        />
       </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.297004619258!2d139.62748611519908!3d35.620403940913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f412cc4882cb%3A0xc85163cc3a779fdb!2z44CSMTU4LTAwOTUg5p2x5Lqs6YO95LiW55Sw6LC35Yy654Cs55Sw77yU5LiB55uu77yS77yT4oiS77yV!5e0!3m2!1sja!2sjp!4v1564391107217!5m2!1sja!2sjp"
+        width="100%"
+        height="450"
+        frameborder="0"
+        style="border:0"
+        allowfullscreen
+      />
     </div>
-    <div class="js-drawer-back drawer-back"></div>
   </div>
 </template>
 
-<script></script>
+<script>
+import VueScrollClass from 'vue-scroll-class'
+
+export default {
+  directives: {
+    'scroll-class': VueScrollClass
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .section {
@@ -67,43 +72,43 @@
     font-size: 24px;
     @include sp {
       display: block;
-      // width: 100%;
       text-align: center;
       font-size: 16px;
     }
     th {
-      // color: #444;
       padding: 32px;
       border: 1px solid #444;
       background: #f2f2f2;
       @include sp {
         padding: 16px;
-        // text-align: center;
         display: block;
-        // width: 100%;
       }
     }
     td {
-      // color: #444;
       padding: 32px;
       border: 1px solid #444;
       background: #fafafa;
       @include sp {
-        // text-align: center;
         display: block;
         padding: 16px;
-        // width: 100%;
       }
     }
   }
 }
+.animated {
+  animation-duration: 1.5s;
+}
+
 .access {
   font-size: 24px;
   margin-bottom: 16px;
-  @include sp {
-    // width: 100%;
-  }
+  opacity: 0;
 }
+.invisible {
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
 .iframe {
   display: block;
   @include sp {
