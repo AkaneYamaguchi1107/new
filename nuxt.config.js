@@ -45,7 +45,11 @@ export default {
    ** Plugins to load before mounting the App
    */
 
-  plugins: [],
+  plugins: [
+    { src: '@/plugins/burger-menu',ssr: false },
+    { src: '@/plugins/animatescroll.js', mode: 'client'
+    }
+  ],
 
   /*
    ** Nuxt.js modules
