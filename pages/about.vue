@@ -8,25 +8,27 @@
       </div>
       <div class="services">
         <table class="services__table">
-          <tr>
-            <th>社名</th>
-            <td>株式会社ヤマシア</td>
-          </tr>
-          <tr>
-            <th>事業内容</th>
-            <td>UI/UX支援、案件支援、案件受託、テスト</td>
-          </tr>
-          <tr>
-            <th>所在地</th>
-            <td>東京都世田谷区瀬田</td>
-          </tr>
-          <tr>
-            <th>沿革</th>
-            <td>
-              <li>2016/04/27 世田谷区瀬田に移転</li>
-              <li>2013/02/05 江東区富岡に設立</li>
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <th>社名</th>
+              <td>株式会社ヤマシア</td>
+            </tr>
+            <tr>
+              <th>事業内容</th>
+              <td>UI/UX支援、案件支援、案件受託、テスト</td>
+            </tr>
+            <tr>
+              <th>所在地</th>
+              <td>東京都世田谷区瀬田</td>
+            </tr>
+            <tr>
+              <th>沿革</th>
+              <td>
+                <li>2016/04/27 世田谷区瀬田に移転</li>
+                <li>2013/02/05 江東区富岡に設立</li>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
       <div v-scroll-trigger class="access animated fadeInUp">
@@ -94,11 +96,10 @@
   margin-bottom: 16px;
   opacity: 0;
 }
-.invisible {
+.fadeInUp {
   transition: opacity 0.5s;
-  opacity: 1;
+  // opacity: 1;
 }
-
 .iframe {
   display: block;
   @include sp {

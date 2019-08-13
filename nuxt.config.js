@@ -46,7 +46,10 @@ export default {
    */
 
   plugins: [
-    '~plugins/scroll-trigger.js'
+    '~plugins/scroll-trigger.js',
+    { src: '@/plugins/burger-menu',ssr: false },
+    { src: '@/plugins/animatescroll.js', mode: 'client'
+    }
   ],
 
   /*
