@@ -1,45 +1,6 @@
 <template>
   <div>
-    <header class="header">
-      <a class="header__menu js-drawer-trg">
-        <i class="fas fa-bars"></i>
-      </a>
-      <p class="header__logo">
-        <nuxt-link to="/">yamashia</nuxt-link>
-      </p>
-      <ul class="gnav">
-        <li class="gnav__item">
-          <nuxt-link to="/" exact class="gnav__link">ホーム</nuxt-link>
-        </li>
-        <li class="gnav__item">
-          <nuxt-link to="/services" class="gnav__link">事業案内</nuxt-link>
-        </li>
-        <li class="gnav__item">
-          <nuxt-link to="/about" class="gnav__link">会社案内</nuxt-link>
-        </li>
-        <li class="gnav__item">
-          <nuxt-link to="/contact" class="gnav__link">お問い合わせ</nuxt-link>
-        </li>
-      </ul>
-    </header>
     <nuxt />
-    <footer class="footer">
-      <ul class="fnav">
-        <li class="fnav__item">
-          <nuxt-link to="/" class="fnav__link">ホーム</nuxt-link>
-        </li>
-        <li class="fnav__item">
-          <nuxt-link to="/services" class="fnav__link">事業案内</nuxt-link>
-        </li>
-        <li class="fnav__item">
-          <nuxt-link to="/about" class="fnav__link">会社案内</nuxt-link>
-        </li>
-        <li class="fnav__item">
-          <nuxt-link to="contact" class="fnav__link">お問い合わせ</nuxt-link>
-        </li>
-      </ul>
-      <p class="footer__copyright">&copy; yamashia All rights reserved.</p>
-    </footer>
   </div>
 </template>
 <script></script>

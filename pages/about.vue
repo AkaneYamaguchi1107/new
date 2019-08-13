@@ -2,7 +2,7 @@
   <div class="section">
     <div class="container">
       <div class="heading">
-        <h2 class="heading__title">
+        <h2 v-scroll-trigger="{ buff: 10 }" class="heading__title">
           会社概要
         </h2>
       </div>
@@ -29,7 +29,7 @@
           </tr>
         </table>
       </div>
-      <div v-scroll-class:invisible class="access animated fadeInUp">
+      <div v-scroll-trigger class="access animated fadeInUp">
         ACCESS
       </div>
       <iframe
@@ -43,16 +43,6 @@
     </div>
   </div>
 </template>
-
-<script>
-import VueScrollClass from 'vue-scroll-class'
-
-export default {
-  directives: {
-    'scroll-class': VueScrollClass
-  }
-}
-</script>
 
 <style lang="scss" scoped>
 .section {
