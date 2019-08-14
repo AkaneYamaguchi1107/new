@@ -2,7 +2,10 @@
   <div class="section">
     <div class="container">
       <div class="heading">
-        <h2 class="heading__title">
+        <h2
+          v-scroll-trigger="{ buff: 10 }"
+          class="heading__title animated fadeInUp"
+        >
           会社概要
         </h2>
       </div>
@@ -31,8 +34,15 @@
           </tbody>
         </table>
       </div>
-      <div v-scroll="handleScroll" class="access animated fadeInUp">
-        ACCESS
+      <!-- <div v-scroll-trigger="{ buff: 10 }" class="access animated fadeInUp"> -->
+      <!-- <div> -->
+      <!-- <div v-scroll-trigger="{ buff: 10 }" class="access animated fadeInUp"> -->
+      <!-- <div v-scroll-trigger class="access animated fadeInUp"> -->
+      <!-- <div v-scroll-class:fadeInUp="400" class="access animated"> -->
+      <div v-scroll-trigger:fadeInUp="{ buff: 400 }" class="access">
+        <h2 class="animated fadeInUp">
+          ACCESS
+        </h2>
       </div>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.297004619258!2d139.62748611519908!3d35.620403940913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f412cc4882cb%3A0xc85163cc3a779fdb!2z44CSMTU4LTAwOTUg5p2x5Lqs6YO95LiW55Sw6LC35Yy654Cs55Sw77yU5LiB55uu77yS77yT4oiS77yV!5e0!3m2!1sja!2sjp!4v1564391107217!5m2!1sja!2sjp"
@@ -45,31 +55,18 @@
     </div>
   </div>
 </template>
-
 <script>
-// import VueScrollClass from 'vue-scroll-class'
-
-// export default {
-//   directives: {
-//     'scroll-class': VueScrollClass
-//   }
-// }
+import VueScrollClass from 'vue-scroll-class'
 export default {
-  methods: {
-    // eslint-disable-next-line space-before-function-paren
-    handleScroll: function(evt, el) {
-      const rect = el.getBoundingClientRect()
-      // IEではwindow.scrollYが動かない
-      if (window.scrollY || window.pageYOffset > rect.top) {
-        // 今回はクラスを付与してCSSでアニメーション
-        el.classList.add('fadeInUp')
-      }
-    }
+  directives: {
+    'scroll-class': VueScrollClass
   }
 }
 </script>
-
 <style lang="scss" scoped>
+.heading__title {
+  opacity: 0;
+}
 .section {
   padding: 150px;
   background: #fbf9f7;
@@ -111,9 +108,8 @@ export default {
   }
 }
 .animated {
-  animation-duration: 1.5s;
+  animation-duration: 3s;
 }
-
 .access {
   font-size: 24px;
   margin-bottom: 16px;
@@ -121,12 +117,14 @@ export default {
 }
 .fadeInUp {
   transition: opacity 0.5s;
-  // opacity: 1;
 }
 .iframe {
   display: block;
   @include sp {
     height: 160px;
   }
+}
+.active {
+  opacity: 1;
 }
 </style>

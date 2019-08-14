@@ -45,10 +45,7 @@ export default {
    ** Plugins to load before mounting the App
    */
 
-  plugins: [
-    { src: '@/plugins/burger-menu',ssr: false },
-    { src: '@/plugins/animatescroll.js', mode: 'client'
-    }
+  plugins: ['~/plugins/scroll-trigger.js'
   ],
 
   /*
