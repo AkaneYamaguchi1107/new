@@ -48,6 +48,20 @@
     <div class="js-drawer-back drawer-back"></div>
   </div>
 </template>
+<script>
+export default {
+  head() {
+    return {
+      title: 'お問い合わせ',
+      meta: {
+        hid: 'description',
+        name: 'description',
+        content: 'CONTACTページ'
+      }
+    }
+  }
+}
+</script>
 <style lang="scss" scoped>
 .section {
   padding: 150px;

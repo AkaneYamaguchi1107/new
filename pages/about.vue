@@ -2,10 +2,7 @@
   <div class="section">
     <div class="container">
       <div class="heading">
-        <h2
-          v-scroll-trigger="{ buff: 10 }"
-          class="heading__title animated fadeInUp"
-        >
+        <h2 class="heading__title">
           会社概要
         </h2>
       </div>
@@ -60,13 +57,20 @@ import VueScrollClass from 'vue-scroll-class'
 export default {
   directives: {
     'scroll-class': VueScrollClass
+  },
+  head() {
+    return {
+      title: '会社概要',
+      meta: {
+        hid: 'description',
+        name: 'description',
+        content: 'ABOUTページ'
+      }
+    }
   }
 }
 </script>
 <style lang="scss" scoped>
-.heading__title {
-  opacity: 0;
-}
 .section {
   padding: 150px;
   background: #fbf9f7;
