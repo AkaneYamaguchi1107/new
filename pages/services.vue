@@ -79,17 +79,17 @@ import VueScrollClass from 'vue-scroll-class'
 export default {
   directives: {
     'scroll-class': VueScrollClass
-  },
-  head() {
-    return {
-      title: '会社案内',
-      meta: {
-        hid: 'description',
-        name: 'description',
-        content: 'SERVICESページ'
-      }
-    }
   }
+  // head() {
+  //   return {
+  //     title: '会社案内',
+  //     meta: {
+  //       hid: 'description',
+  //       name: 'description',
+  //       content: 'SERVICESページ'
+  //     }
+  //   }
+  // }
 }
 </script>
 <style lang="scss" scoped>

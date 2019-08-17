@@ -16,6 +16,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "^2.6.0",
     "nuxt": "^2.0.0",
+    "vue-burger-menu": "^2.0.2",
     "vue-scroll-class": "^1.2.3"
   },
   "devDependencies": {

@@ -4,7 +4,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title:　'ヤマシア',
+    title:　'株式会社ヤマシア',
     titleTemplate: '%s ーヤマシア',
     meta: [
       { charset: 'utf-8' },
@@ -46,7 +46,8 @@ export default {
    ** Plugins to load before mounting the App
    */
 
-  plugins: ['~/plugins/scroll-trigger.js'
+  plugins: ['~/plugins/scroll-trigger.js',
+          { src: '~plugins/burger-menu', ssr: false }
   ],
 
   /*
