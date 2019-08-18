@@ -8,20 +8,21 @@
         <nuxt-link to="/">yamashia</nuxt-link>
       </p>
       <ul class="gnav">
-        <li class="gnav__item">
+        <li class="gnav__list">
           <nuxt-link to="/" exact class="gnav__link">ホーム</nuxt-link>
         </li>
-        <li class="gnav__item">
+        <li class="gnav__list">
           <nuxt-link to="/services" class="gnav__link">事業案内</nuxt-link>
         </li>
-        <li class="gnav__item">
+        <li class="gnav__list">
           <nuxt-link to="/about" class="gnav__link">会社案内</nuxt-link>
         </li>
-        <li class="gnav__item">
+        <li class="gnav__list">
           <nuxt-link to="/contact" class="gnav__link">お問い合わせ</nuxt-link>
         </li>
       </ul>
     </header>
+    <div class="js-drawer-back.drawer-back"></div>
     <nuxt />
     <footer class="footer">
       <ul class="fnav">
@@ -59,6 +60,7 @@
   z-index: 1;
   @include sp {
     width: 100%;
+    justify-content: flex-start;
   }
   &__menu {
     display: none;
@@ -79,22 +81,27 @@
 .gnav {
   display: flex;
   @include sp {
+    text-align: center;
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     display: block;
-    background: #fff;
+    background: #fafafa;
     transform: translateX(-100%);
     transition: 0.3s;
     z-index: 100;
+    width: 240px;
+    .is-drawer-open & {
+      transform: translateX(0);
+    }
   }
-  &__item {
+  &__list {
     display: block;
     font-size: 14px;
     padding-right: 64px;
     @include sp {
-      padding: 40px;
+      padding: 0;
     }
   }
   &__link {
@@ -114,6 +121,9 @@
       background: #444;
       opacity: 0;
       transition: opacity 0.3s;
+      @include sp {
+        display: none;
+      }
     }
     &:hover:after {
       opacity: 1;
@@ -121,8 +131,30 @@
     &.nuxt-link-active {
       font-weight: bold;
     }
+    @include sp {
+      font-size: 18px;
+      text-align: center;
+      padding: 0;
+    }
   }
 }
+.drawer-back {
+  visibility: hidden;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  transition: 0.3s;
+  .is-drawer-open & {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
 .footer {
   color: #fafafa;
   padding: 16px;

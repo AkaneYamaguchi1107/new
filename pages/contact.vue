@@ -49,18 +49,18 @@
   </div>
 </template>
 <script>
-export default {
-  head() {
-    return {
-      title: 'お問い合わせ',
-      meta: {
-        hid: 'description',
-        name: 'description',
-        content: 'CONTACTページ'
-      }
-    }
-  }
-}
+// export default {
+//   head() {
+//     return {
+//       title: 'お問い合わせ',
+//       meta: {
+//         hid: 'description',
+//         name: 'description',
+//         content: 'CONTACTページ'
+//       }
+//     }
+//   }
+// }
 </script>
 <style lang="scss" scoped>
 .section {
